@@ -1,0 +1,17 @@
+name: First workflow
+
+build: MiBuild
+
+on: 
+git status
+
+runs on: MiBuild
+
+job:
+  steps:
+    name: echo a string
+    run: echo "hello world"
+    
+    
+
+
