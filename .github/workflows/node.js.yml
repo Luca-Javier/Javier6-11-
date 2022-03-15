@@ -1,17 +1,13 @@
-name: First workflow
+on: status
+  name: FirstWorkflow
 
-on: 
-  push:
-   branches: [ main ]
-   
-
-job: status
-  build:
-  runs-on: ubuntu-latest
-  
-  steps:
-    name: echo a string
-    run: echo "hello world"
+  jobs:
+    FirstWorkflow:
+      name: aviso
+      runs-on: ubuntu-lastest
+      steps:
+      name: checkout code
+      uses: actions/checkout@v2
     
     
 
