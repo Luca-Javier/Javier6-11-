@@ -27,4 +27,4 @@ jobs:
       - name: ls
         run: ls /home/runner/work/Javier6-11-/etc
       - name: tail
-        run: tail /home/runner/work/Javier6-11-/Comandos/etc
+        run: tail /home/runner/work/Javier6-11-/Comandos
