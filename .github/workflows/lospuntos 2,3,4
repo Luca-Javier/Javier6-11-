@@ -17,5 +17,5 @@ jobs:
       run: mkdir  home
       run: cd /home/runner/work/Javier6-11-/home
       run: mkdir alumno
-    - name: estructura imagen
+    - name: estructura imagem
      
