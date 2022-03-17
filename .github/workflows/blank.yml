@@ -18,4 +18,4 @@ jobs:
       - name: cd
         run: cd /home/runner/work/Javier6-11-
       - name: cp
-        run: cp ComandosLinux.txt /home/runner/work/Javier6-11-/Comandos/etc
+        run: cp ComandosLinux.txt /home/runner/work/Javier6-11-/Comandos/etc/
