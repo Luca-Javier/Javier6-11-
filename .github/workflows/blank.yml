@@ -14,6 +14,6 @@ jobs:
       - name: echo a string
         run: echo "hello world"
       - name: cd
-        run: cd/Comandos
+        run: cd /Comandos
       - name: cp
         run: cp ComandosLinux.txt /Comandos/etc
