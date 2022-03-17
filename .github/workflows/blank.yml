@@ -14,7 +14,7 @@ jobs:
       - name: echo a string
         run: echo "hello world"
       - name: pwd
-        run: pwd Javier6-11-
+        run: pwd 
       - name: cd
         run: cd /Comandos
       - name: cp
