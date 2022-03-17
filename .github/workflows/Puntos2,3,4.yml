@@ -9,7 +9,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: ls
+    - name: Punto 2
       run: ls /etc
+    - name: punto 3
+      run: ls
 
      
