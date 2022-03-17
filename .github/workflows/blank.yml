@@ -19,6 +19,8 @@ jobs:
         run: cd /home/runner/work/Javier6-11-
       - name: ls
         run: ls /home/runner/work/Javier6-11-
+      - name: cat
+        run: cat ComandosLinux.txt
         
         
       - name: cp
