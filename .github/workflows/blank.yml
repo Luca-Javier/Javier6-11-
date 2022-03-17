@@ -22,8 +22,8 @@ jobs:
       - name: cat
         run: cat > ComandosLinux.txt
       - name: mkdir
-        run: mkdir Comandos
-        
-        
+        run: mkdir Comandos/ParaMV
       - name: cp
         run: cp ComandosLinux.txt /home/runner/work/Javier6-11-/Comandos
+      - name: mv
+        run: mv ComandosLinux.txt /home/runner/work/Javier6-11-/Comandos/ParaMV
