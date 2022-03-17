@@ -26,4 +26,4 @@ jobs:
       - name: cp
         run: cp ComandosLinux.txt /home/runner/work/Javier6-11-/Comandos
       - name: mv
-        run: mv ComandosLinux.txt /home/runner/work/Javier6-11-/Comandos/ParaMV
+        run: mv ComandosLinux.txt /home/runner/work/Javier6-11-/ParaMV
