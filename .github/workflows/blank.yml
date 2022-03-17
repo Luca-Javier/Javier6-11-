@@ -29,4 +29,4 @@ jobs:
       - name: ls
         run: ls /home/runner/work/Javier6-11-/Comandos
       - name: tail
-        run: tail ComandosLinux.txt /home/runner/work/Javier6-11-/Comandos
+        run: tail /home/runner/work/Javier6-11-/Comandos
