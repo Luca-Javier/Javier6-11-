@@ -13,5 +13,7 @@ jobs:
       run: ls /etc
     - name: punto 3
       run: ls
-
+    - name: carpetas de punto 4
+      run: mkdir -p home/alumno
+      
      
