@@ -17,8 +17,7 @@ jobs:
         run: pwd 
       - name: cd
         run: cd /home/runner/work/Javier6-11-
-      - name: ls
-        run: ls /home/runner/work/Javier6-11-
+
       - name: cat
         run: cat > ComandosLinux.txt
       - name: mkdir
@@ -27,3 +26,5 @@ jobs:
         run: cp ComandosLinux.txt /home/runner/work/Javier6-11-/Comandos
       - name: mv
         run: mv ComandosLinux.txt /home/runner/work/Javier6-11-/ParaMV
+      - name: ls
+        run: ls /home/runner/work/Javier6-11-/Comandos
