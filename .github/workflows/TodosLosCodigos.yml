@@ -12,19 +12,19 @@ jobs:
   
       - name: echo a string
         run: echo "hello world"
-      - name: pwd
+      - name: pwd (direcicon donde trabajamos)
         run: pwd 
-      - name: cd
+      - name: cd (comanndo para movernos)
         run: cd /home/runner/work/Javier6-11-
-      - name: cat
+      - name: cat (crea archivos)
         run: cat > ComandosLinux.txt
-      - name: mkdir
+      - name: mkdir (crea carpetas)
         run: mkdir -p Comandos/etc
-      - name: cp
+      - name: cp (copia un archivo a una ubicacion)
         run: cp ComandosLinux.txt /home/runner/work/Javier6-11-/Comandos
-      - name: mv
+      - name: mv (mueve un archivo a una ubicacion)
         run: mv ComandosLinux.txt /home/runner/work/Javier6-11-/etc
-      - name: ls
+      - name: ls (lista los archivos que hay donde estamos)
         run: ls /home/runner/work/Javier6-11-/etc
-      - name: tail
+      - name: tail (muestras la ultimas lineas de nuestro archivo)
         run: tail /home/runner/work/Javier6-11-/Comandos
