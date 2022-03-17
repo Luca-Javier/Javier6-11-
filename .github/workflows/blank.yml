@@ -16,6 +16,6 @@ jobs:
       - name: pwd
         run: pwd 
       - name: cd
-        run: cd /Comandos
+        run: cd /home/runner/work/Javier6-11-
       - name: cp
         run: cp ComandosLinux.txt /Comandos/etc
