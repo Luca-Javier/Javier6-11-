@@ -14,6 +14,8 @@ jobs:
     - name: punto 3
       run: ls
     - name: carpetas de punto 4
-      run: mkdir -p home/alumno
-      
+      run: mkdir  home
+      run: cd /home/runner/work/Javier6-11-/home
+      run: mkdir alumno
+    - name: estructura imagen
      
