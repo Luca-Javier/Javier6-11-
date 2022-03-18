@@ -19,7 +19,7 @@ jobs:
       run: cd /home/runner/work/Javier6-11-/home
     - name: crear alumno
       run: mkdir alumno
-    - name: estructura imagem
+
     
     - name: echo a string
       run: echo "hello world"
