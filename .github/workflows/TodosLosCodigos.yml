@@ -3,28 +3,39 @@ name: CI
 on: [push]
 
 
-
 jobs:
   build:
-    runs-on: ubuntu-latest
-
+    runs-on: ubuntu-lastest
+    
     steps:
-  
-      - name: echo a string
-        run: echo "hello world"
-      - name: pwd (direcicon donde trabajamos)
-        run: pwd 
-      - name: cd (comanndo para movernos)
-        run: cd /home/runner/work/Javier6-11-
-      - name: cat (crea archivos)
-        run: cat > ComandosLinux.txt
-      - name: mkdir (crea carpetas)
-        run: mkdir -p Comandos/etc
-      - name: cp (copia un archivo a una ubicacion)
-        run: cp ComandosLinux.txt /home/runner/work/Javier6-11-/Comandos
-      - name: mv (mueve un archivo a una ubicacion)
-        run: mv ComandosLinux.txt /home/runner/work/Javier6-11-/etc
-      - name: ls (lista los archivos que hay donde estamos)
-        run: ls /home/runner/work/Javier6-11-/etc
-      - name: tail (muestras la ultimas lineas de nuestro archivo)
-        run: tail /home/runner/work/Javier6-11-/Comandos
+    
+    - name: Punto 2
+      run: ls /etc
+    - name: punto 3
+      run: ls
+    - name: punto 4 de a poquito (home)
+      run: mkdir  home
+    - name: moverse a home
+      run: cd /home/runner/work/Javier6-11-/home
+    - name: crear alumno
+      run: mkdir alumno
+    - name: estructura imagem
+    
+    - name: echo a string
+      run: echo "hello world"
+    - name: pwd (direcicon donde trabajamos)
+      run: pwd 
+    - name: cd (comanndo para movernos)
+      run: cd /home/runner/work/Javier6-11-
+    - name: cat (crea archivos)
+      run: cat > ComandosLinux.txt
+    - name: mkdir (crea carpetas)
+      run: mkdir -p Comandos/etc
+    - name: cp (copia un archivo a una ubicacion)
+      run: cp ComandosLinux.txt /home/runner/work/Javier6-11-/Comandos
+    - name: mv (mueve un archivo a una ubicacion)
+      run: mv ComandosLinux.txt /home/runner/work/Javier6-11-/etc
+    - name: ls (lista los archivos que hay donde estamos)
+      run: ls /home/runner/work/Javier6-11-/etc
+    - name: tail (muestras la ultimas lineas de nuestro archivo)
+      run: tail /home/runner/work/Javier6-11-/Comandos
