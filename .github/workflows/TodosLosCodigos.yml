@@ -33,6 +33,14 @@ jobs:
       run: mkdir ProfesoresInf
     - name: AulaInf
       run: mkdir AulaInf
+      
+
+  build2: 
+    name: ahrr
+    runs-on: ubuntu-lastest
+
+    
+    steps:
 
     
     - name: echo a string
