@@ -19,6 +19,20 @@ jobs:
       run: cd /home/runner/work/Javier6-11-/home
     - name: crear alumno
       run: mkdir alumno
+    - name: mover alumno
+      run: cd /home/runner/work/Javier6-11-/home/alumno
+    - name: crear informatica
+      run: mkdir Informatica  
+    - name: cd informatica
+      run: cd /home/runner/work/Javier6-11-/home/alumno/Informatica
+    - name: crear alumnos inf  
+      run: mkdir AlumnosInf
+    - name: notasinf
+      run: mkdir AlumnosInf/NotasInf
+    - name: ProfesoresInf
+      run: mkdir ProfesoresInf
+    - name: AulaInf
+      run: mkdir AulaInf
 
     
     - name: echo a string
