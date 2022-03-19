@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-lastest
     
     steps:
-    - name: todo
+    - name: todoooo
       run: 
         |
         cd /home/runner/work/Javier6-11-
