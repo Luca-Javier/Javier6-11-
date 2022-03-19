@@ -19,6 +19,10 @@ jobs:
         cd /home/runner/work/Javier6-11-/home
         mkdir alumno
         cd /home/runner/work/Javier6-11-/home/alumno
+        |
+    - name: estructura
+      run:
+        |
         mkdir informatica
         mkdir alumnosinf
         mkdir profesoresinf
