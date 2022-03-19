@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-lastest
     
     steps:
+    - name: rama
+      run: git chekout test
     - name: todoooo
       run: 
         |
