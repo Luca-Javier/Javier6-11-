@@ -8,31 +8,23 @@ jobs:
     runs-on: ubuntu-lastest
     
     steps:
-    
-    - name: Punto 2
-      run: ls /etc
-    - name: punto 3
-      run: ls
-    - name: punto 4 de a poquito (home)
-      run: mkdir  home
-    - name: moverse a home
-      run: cd /home/runner/work/Javier6-11-/home
-    - name: crear alumno
-      run: mkdir alumno
-    - name: mover alumno
-      run: cd /home/runner/work/Javier6-11-/home/alumno
-    - name: crear informatica
-      run: mkdir Informatica  
-    - name: cd informatica
-      run: cd /home/runner/work/Javier6-11-/home/alumno/Informatica
-    - name: crear alumnos inf  
-      run: mkdir AlumnosInf
-    - name: notasinf
-      run: mkdir AlumnosInf/NotasInf
-    - name: ProfesoresInf
-      run: mkdir ProfesoresInf
-    - name: AulaInf
-      run: mkdir AulaInf
+    - name: todo
+      run: 
+        |
+        cd /home/runner/work/Javier6-11-
+        ls
+        mkdir home
+        cd /home/runner/work/Javier6-11-/home
+        mkdir alumno
+        cd /home/runner/work/Javier6-11-/home/alumno
+        mkdir informatica
+        mkdir alumnosinf
+        mkdir profesoresinf
+        mkdir aulainf
+        cd /home/runner/work/Javier6-11-/home/alumno/alumnosinf
+        mkdir notasinf
+        ls /etc
+        |
       
 
   build2: 
