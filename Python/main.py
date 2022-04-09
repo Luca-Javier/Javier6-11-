@@ -1,15 +1,20 @@
 import requests
 
-url="https://www.facebook.com/"
+if __name__ == "__main__":
 
-r= requests.get(url)
+    url = "https://http.dog/"
+    response= requests.get(url)
+    print(response)
 
-file1 = open("archivo.txt", "w")
-file1.write(r)
-print(r)
+if response.status_code == 200:
+    contenido = response.headers['Content-Type']
+    
+    print(contenido)
 
-
-""" Devuelve <Response [200]> """
+    file = open("archivo.txt", "w")
+    file.write(contenido + "          "+str(response))
+    file.close()
+    
 
 
 
