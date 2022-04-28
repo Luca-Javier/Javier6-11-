@@ -11,8 +11,8 @@ jobs:
     - name: todo
       run: |
       
+        pwd
         
-        cd pwd
         mkdir home
         cd concat(ubi+"/home")
         |
