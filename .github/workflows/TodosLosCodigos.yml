@@ -4,27 +4,7 @@ on: [push]
 
 
 jobs:
-  build:
-    runs-on: ubuntu-lastest
-    
-    steps:
-    - name: todo
-      run: 
-        |
-        cd /home/runner/work/Javier6-11-
-        ls
-        mkdir home
-        cd /home/runner/work/Javier6-11-/home
-        mkdir alumno
-        cd /home/runner/work/Javier6-11-/home/alumno
-        mkdir informatica
-        mkdir alumnosinf
-        mkdir profesoresinf
-        mkdir aulainf
-        cd /home/runner/work/Javier6-11-/home/alumno/alumnosinf
-        mkdir notasinf
-        ls /etc
-        |
+ 
       
 
   build2: 
