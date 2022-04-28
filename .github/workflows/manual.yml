@@ -9,7 +9,7 @@ jobs:
     
     steps:
     - name: todo
-      run: 
+      run: |
         
         cd /home/runner/work/Javier6-11-
         ls
@@ -23,7 +23,7 @@ jobs:
         mkdir aulainf
         cd /home/runner/work/Javier6-11-/home/alumno/alumnosinf
         mkdir notasinf
-        ls /etc
+        ls /etc |
         
       
 
