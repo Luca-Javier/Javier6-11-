@@ -15,7 +15,6 @@ jobs:
         pwd
         
         mkdir home
-        cd concat(ubi+"/home")
         |
 
         
