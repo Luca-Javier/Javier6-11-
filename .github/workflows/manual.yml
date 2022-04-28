@@ -10,7 +10,7 @@ jobs:
     steps:
     - name: todo
       run: |
-        ubi = pwd
+        pwd = ubi
         cd ubi
         mkdir home
         cd concat(ubi+"/home")
