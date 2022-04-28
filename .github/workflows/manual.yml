@@ -12,7 +12,7 @@ jobs:
       run: |
         
         cd /home/runner/work/Javier6-11-
-        ls
+        ls-files
         mkdir home
         cd /home/runner/work/Javier6-11-/home
         mkdir alumno
