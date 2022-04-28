@@ -12,7 +12,7 @@ jobs:
       run: |
       
         cd /home/runner/work/Javier6-11-/Javier6-11-
-        mkdir home/Alumno
+        mkdir -p home/Alumno
         cd /home/runner/work/Javier6-11-/Javier6-11-/home/alumno
         
 
