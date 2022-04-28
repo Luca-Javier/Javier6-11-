@@ -10,19 +10,12 @@ jobs:
     steps:
     - name: todo
       run: |
-        pwd
-        cd /home/runner/work/Javier6-11-/Javier6-11-
+        ubi = pwd
+        cd ubi
         mkdir home
-        cd /home/runner/work/Javier6-11-/home
-        mkdir alumno
-        cd /home/runner/work/Javier6-11-/home/alumno
-        mkdir informatica
-        mkdir alumnosinf
-        mkdir profesoresinf
-        mkdir aulainf
-        cd /home/runner/work/Javier6-11-/home/alumno/alumnosinf
-        mkdir notasinf
-        ls /etc |
+        cd concat(ubi+"/home")
+        |
+
         
       
 
