@@ -10,7 +10,7 @@ jobs:
     steps:
     - name: todo
       run: |
-        
+        pwd
         cd /home/runner/work/Javier6-11-
         mkdir home
         cd /home/runner/work/Javier6-11-/home
