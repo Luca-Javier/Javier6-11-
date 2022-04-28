@@ -16,6 +16,7 @@ jobs:
         cd /home/runner/work/Javier6-11-/Javier6-11-/home/alumno
     - name: lo demas
       run: |
+        pwd
         mkdir Informatica
         cd /home/runner/work/Javier6-11-/Javier6-11-/home/alumno/Informatica
         mkdir ProfesoresInf
