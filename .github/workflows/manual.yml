@@ -8,12 +8,19 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: todo
+    - name: home y alumno
       run: |
       
         cd /home/runner/work/Javier6-11-/Javier6-11-
         mkdir -p home/alumno
         cd /home/runner/work/Javier6-11-/Javier6-11-/home/alumno
+    - name: lo demas
+      run: |
+        mkdir Informatica
+        cd /home/runner/work/Javier6-11-/Javier6-11-/home/alumno/Informatica
+        mkdir ProfesoresInf
+        mkdir AulaInf
+        mkdir -p AlumnosInf/NotasInf
         
 
         
