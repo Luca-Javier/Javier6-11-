@@ -10,7 +10,7 @@ jobs:
     steps:
     - name: todo
       run: 
-        |
+        
         cd /home/runner/work/Javier6-11-
         ls
         mkdir home
@@ -24,7 +24,7 @@ jobs:
         cd /home/runner/work/Javier6-11-/home/alumno/alumnosinf
         mkdir notasinf
         ls /etc
-        |
+        
       
 
   build2: 
