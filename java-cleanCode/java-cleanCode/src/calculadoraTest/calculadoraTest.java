@@ -18,15 +18,19 @@ public class calculadoraTest {
     public void restarTest() {
         assertEquals(calculator.restar(5, 2), 3);
     }
+
     @Test
     public void multiplicarTest() {
         assertEquals(calculator.multiplicar(5, 2), 10);
     }
-
 
     @Test
     public void dividirTest() {
         assertEquals(calculator.dividir(6, 2), 3);
     }
 
+    @Test
+    public void raizCuadraticaTest(){
+        assertEquals(calculator.raizCuadratica(1,2,-8),-4,2);
+    }
 }
