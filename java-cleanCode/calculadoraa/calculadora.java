@@ -1,12 +1,15 @@
+package calculadoraa;
 import java.util.Scanner;
 
-public class Calculadora {
+
+public class calculadora {
   int numero1;
   int numero2;
   Scanner inputTeclado = new Scanner(System.in);
 
-  public Calculadora() {
+  public calculadora() {
   }
+
 
   public void preguntarNumeros() {
     System.out.println("Numero 1: ");

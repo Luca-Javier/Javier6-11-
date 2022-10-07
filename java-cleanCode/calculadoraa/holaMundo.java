@@ -1,8 +1,10 @@
+package calculadoraa;
+
 public class holaMundo {
   public static void main(String[] args) {
     // System.out.println("Hola mundo");
 
-    Calculadora calculadora = new Calculadora();
+    calculadora calculadora = new calculadora();
     calculadora.preguntarNumeros();
     calculadora.preguntarOperacion();
   }
