@@ -12,6 +12,7 @@ public class calculadoraTest {
     @Test
     public void sumaTest() {
         assertEquals(calculator.sumar(1, 2), 3);
+        assertNotEquals(calculator.sumar("f",1),3);
     }
 
     @Test
