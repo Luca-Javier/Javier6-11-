@@ -41,5 +41,7 @@ public class calculadoraTest {
     public void raizCuadraticaTest(){
         assertEquals(calculator.raizCuadratica(1,2,-8),-4,2);
         assertNotEquals(calculator.raizCuadratica(1,2,-8),-45,25); //Los 2 resultados tienen que ser diferentes
+        try{assertNotEquals(calculator.raizCuadratica(0,2,-8),-45,25);}catch (ArithmeticException e){System.out.println(e);}
+        try{assertNotEquals(calculator.raizCuadratica(1,0,-8),-45,25);}catch (ArithmeticException e){System.out.println(e);}
     }
 }
