@@ -36,12 +36,17 @@ public class calculadoraTest {
         assertNotEquals(calculator.dividir(3, 2), 4);
         try{assertNotEquals(calculator.dividir(6, 0), 3);}catch (ArithmeticException e){System.out.println(e);}
     }
+    @Test(expected = ArithmeticException.class)
+    public void dividirExceptionTest(){
+        calculator.dividir(1,0);
+    }
 
     @Test
     public void raizCuadraticaTest(){
         assertEquals(calculator.raizCuadratica(1,2,-8),-4,2);
         assertNotEquals(calculator.raizCuadratica(1,2,-8),-45,25); //Los 2 resultados tienen que ser diferentes
-        try{assertNotEquals(calculator.raizCuadratica(0,2,-8),-45,25);}catch (ArithmeticException e){System.out.println(e);}
-        try{assertNotEquals(calculator.raizCuadratica(1,0,-8),-45,25);}catch (ArithmeticException e){System.out.println(e);}
+        assertNotEquals(calculator.raizCuadratica(0,2,-8),-45,25);
+        assertNotEquals(calculator.raizCuadratica(1,0,-8),-45,25);
+
     }
 }

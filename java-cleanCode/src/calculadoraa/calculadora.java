@@ -22,6 +22,12 @@ public class calculadora {
 
     }
     public double raizCuadratica(int a, int b, int c){
-        return (-b +- Math.sqrt( (b*b)-(4*a*c) ) )/2*a;
+        if(a ==0 || b == 0) {
+            System.out.println("Ingrese datos válidos");
+            return 0;
+        }
+       else {
+            return (-b + -Math.sqrt((b * b) - (4 * a * c))) / 2 * a;
+        }
     }
 }
