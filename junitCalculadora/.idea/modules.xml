@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/java-cleanCode.iml" filepath="$PROJECT_DIR$/java-cleanCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/junitCalculadora.iml" filepath="$PROJECT_DIR$/junitCalculadora.iml" />
     </modules>
   </component>
 </project>
