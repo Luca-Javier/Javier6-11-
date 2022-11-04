@@ -21,13 +21,21 @@ public class calculadora {
         return numero1 / numero2;
 
     }
-    public double raizCuadratica(int a, int b, int c){
-        if(a ==0 || b == 0) {
-            System.out.println("Ingrese datos válidos");
-            return 0;
+    public double[] raizCuadratica(int a, int b, int c){
+        try{
+       if(a ==0 || b == 0)  { throw new ArithmeticException(); }
+
+        }catch (ArithmeticException e){
+            System.out.println("El valor a o b vale 0");
         }
-       else {
-            return (-b + -Math.sqrt((b * b) - (4 * a * c))) / 2 * a;
-        }
+        double preMasMenos = Math.sqrt((b * b) - (4 * a * c));
+        double postMasMenosPositivo = (-b + preMasMenos)/2*a;
+        double postMasMenosNegativo = (-b - preMasMenos)/2*a;
+
+        double[] rta = {postMasMenosPositivo,postMasMenosNegativo};
+        return rta;
+        //return (-b + -Math.sqrt((b * b) - (4 * a * c))) / 2 * a;
+
     }
+
 }
