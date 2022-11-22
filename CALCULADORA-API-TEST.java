@@ -2,82 +2,105 @@ package apiCalculadora.apiCalculadora;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.MvcResult;
+import org.springframework.test.web.servlet.RequestBuilder;
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 //import ApiCalculadoraApplication.ApiCalculadoraApplication;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
-@SpringBootTest
+@ExtendWith(SpringExtension.class)
+@WebMvcTest(ApiCalculadoraApplication.class)
 class ApiCalculadoraApplicationTests {
 
-	ApiCalculadoraApplication calculator = new ApiCalculadoraApplication();
+	//private ApiCalculadoraApplication calculator = new ApiCalculadoraApplication();
+	@Autowired
+	private MockMvc mvc;
+
+	public String request(String url) throws Exception {
+		try {
+			RequestBuilder request = MockMvcRequestBuilders.get(url);
+			MvcResult response = mvc.perform(request).andReturn();
+			return  response.getResponse().getContentAsString();
+		}catch (Exception e){
+			throw e;
+		}
+	}
+
 
 	@Test
 	public void sumaTest() {
-		assertEquals(calculator.sumar(1, 2), 3);
+		try{
+			assertEquals("3",request("/sumar?a=1&b=2"));
+		}catch (Exception e){System.out.println("--ERROR: "+e);}
 	}
 
 	@Test
 	public void sumaTestFail() {
-		assertNotEquals(calculator.sumar(4,1),3);
+		try{
+			assertEquals("4",request("/sumar?a=1&b=2"));
+		}catch (Exception e){System.out.println("--ERROR: "+e);}
 	}
 
 
 	@Test
 	public void restarTest() {
-		assertEquals(calculator.restar(5, 2), 3);
+		try{
+			assertEquals("-1",request("/restar?a=1&b=2"));
+		}catch (Exception e){System.out.println("--ERROR: "+e);}
 	}
 
 	@Test
 	public void restarTestFail() {
-		assertNotEquals(calculator.restar(3,1),3);
+		try{
+			assertEquals("3",request("/restar?a=1&b=2"));
+		}catch (Exception e){System.out.println("--ERROR: "+e);}
 	}
 
 	@Test
 	public void multiplicarTest() {
-		assertEquals(calculator.multiplicar(5, 2), 10);
+		try{
+			assertEquals("2",request("/multiplicar?a=1&b=2"));
+		}catch (Exception e){System.out.println("--ERROR: "+e);}
 	}
 
 	@Test
 	public void multiplicarTestFail() {
-		assertNotEquals(calculator.multiplicar(4,1),3);
+		try{
+			assertEquals("3",request("/multiplicar?a=1&b=2"));
+		}catch (Exception e){System.out.println("--ERROR: "+e);}
 	}
 
 	@Test
 	public void dividirTest() {
-		assertEquals(calculator.dividir(6, 2), 3);
+		try{
+			assertEquals("2",request("/dividir?a=4&b=2"));
+		}catch (Exception e){System.out.println("--ERROR: "+e);}
 	}
 
 	@Test
 	public void dividirTestFail() {
-		assertNotEquals(calculator.dividir(6, 2), 4);
+		try{
+			assertEquals("3",request("/dividir?a=1&b=2"));
+		}catch (Exception e){System.out.println("--ERROR: "+e);}
 	}
 	@Test
 	public void dividirException() {
 		Assertions.assertThrows(ArithmeticException.class,()->{
-				calculator.dividir(1,0);
+			try{
+				request("/dividir?a=0&b=0");
+			}catch (Exception e){throw new ArithmeticException();}
 		});
 
 	}
-
-	@Test
-	public void raizCuadraticaTest(){
-		assertArrayEquals(calculator.cuadratica(1,2,-8),new double[]{2,-4});
-	}
-	@Test
-	public void raizCuadraticaTestFail(){
-		assertNotEquals(calculator.cuadratica(1,2,80),new double[]{2,-4});
-	}
-	@Test
-	public void raizCuadraticaException(){
-		Assertions.assertThrows(ArithmeticException.class,()->{
-			calculator.cuadratica(1,0,-8); // sí b vale 0
-			calculator.cuadratica(0,2,-8); // sí a vale 0
-		});
-	}
-
 	 
 }

@@ -43,12 +43,13 @@ public class ApiCalculadoraApplication {
 
 	@GetMapping("/dividir")
 	public int dividir(@RequestParam(value="a") int numero1,@RequestParam(value = "b")int numero2) {
-		return numero1 / numero2;
+			if(numero1 == 0|| numero2 == 0)  throw new ArithmeticException();
+			return  numero1 / numero2;
 	}
 
 	@GetMapping("/cuadratica")
 	public double[] cuadratica(@RequestParam(value="a") int a,@RequestParam(value = "b")int b,@RequestParam(value = "c")int c) {
-		if(a ==0 || b == 0)  { throw new ArithmeticException(); }
+		if(a ==0 || b == 0)   throw new ArithmeticException();
 
 		double preMasMenos = Math.sqrt((b * b) - (4 * a * c));
 		double postMasMenosPositivo = (-b + preMasMenos)/2*a;
